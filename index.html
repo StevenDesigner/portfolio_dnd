@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stephen Raj - Web Designer & Developer | Portfolio</title>
+    <meta name="description" content="Explore Stephen Raj's portfolio showcasing web design, development, and UI/UX skills. Contact for custom web solutions.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="icon" href="images/fav.jpg" type="image/x-icon">
+</head>
+
+<body>
+    <div class="background">
+        <!-- Navigation -->
+        <nav class="navbar my-container">
+            <div class="logo"><img src="images/logo2.png" alt="stephen logo" width="170px" id="logo_image"></div>
+            <ul id="navbar-links">
+                <li><a href="#skill">Skills</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#career">Career</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="Stephenraj(Web Designer).pdf" target="_blank">Resume</a></li>
+            </ul>
+            <div class="hamburger" onclick="toggleMenu()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </nav>
+
+        <!-- Add the toggle script -->
+        <script>
+            function toggleMenu() {
+                document.getElementById("navbar-links").classList.toggle("show");
+            }
+
+            window.onscroll = function () {
+                toggleNavbarBackground();
+            };
+
+            function toggleNavbarBackground() {
+                const navbar = document.querySelector('.navbar');
+                const navlogo=document.querySelector('#logo_image');
+                if (window.scrollY > 0) {
+                    navbar.classList.add('fixed'); // Add 'fixed' class on scroll
+                    navlogo.src='images/logo1.png';
+                } else {
+                    navbar.classList.remove('fixed'); // Remove 'fixed' class when at top
+                    navlogo.src='images/logo2.png';
+
+                }
+            }
+
+            // // Hamburger menu toggle (optional)
+            // function toggleMenu() {
+            //     const navbarLinks = document.getElementById('navbar-links');
+            //     navbarLinks.classList.toggle('active');
+            // }
+        </script>
+
+
+        <!-- Hero Section -->
+
+        <section class="hero my-container">
+            <h1>Stephen Raj - Web Designer, Developer & Tech  <span class="hero-span">Soln.</span></h1>
+            <p>Creating innovative websites and software solutions with expert design and development skills. <br> Your trusted partner for web design, development, and digital solutions.</p>
+
+            <div class="hero-btn">
+                <a href="#contact">Get in Touch</a>
+
+            </div>
+        </section>
+    </div>
+
+    <div id="skill"></div>
+    <section class="skills-section my-container">
+        <div class="skills-header">
+            <div class="why-me">
+                <p>Why Me</p>
+                <h3>My Skills</h3>
+            </div>
+            <div class="skills-intro">
+                <p>With expertise in web development, software design, and graphic creativity, I craft tailored
+                    solutions to meet your unique needs. Let's create something remarkable together!</p>
+            </div>
+        </div>
+
+        <div class="skills-cards">
+            <!-- Web Design -->
+            <div class="skill-card">
+                <i class="bi bi-code-slash skill-icon"></i>
+                <h4>Web Design</h4>
+                <p>Expertise in HTML, CSS, Bootstrap, jQuery, and JavaScript for responsive designs.</p>
+            </div>
+
+
+            <!-- Web Development -->
+            <div class="skill-card">
+                <i class="bi bi-window-stack skill-icon"></i>
+                <h4>Web Development</h4>
+                <p>Experience with PHP, MySQL, Node.js, MS SQL, Python Flask, and SQLite.</p>
+            </div>
+
+            <!-- VBA and Macros -->
+            <div class="skill-card">
+                <i class="bi bi-file-earmark-spreadsheet skill-icon"></i>
+                <h4>VBA and Macros</h4>
+                <p>Automation and functionality enhancements in Excel using VBA and macros.</p>
+            </div>
+
+
+            <!-- Desktop Applications -->
+            <div class="skill-card">
+                <i class="bi bi-pc-display skill-icon"></i>
+                <h4>Desktop Applications</h4>
+                <p>Development using C#.NET, MS Access, and Python Tkinter.</p>
+            </div>
+
+
+            <!-- Graphic Design -->
+            <div class="skill-card">
+                <i class="bi bi-brush skill-icon"></i>
+                <h4>Graphic Design</h4>
+                <p>Proficiency in Adobe Photoshop, Illustrator, and InDesign for creative visuals.</p>
+            </div>
+
+
+            <!-- UI/UX Design -->
+            <div class="skill-card">
+                <i class="bi bi-vector-pen skill-icon"></i>
+                <h4>UI/UX Design</h4>
+                <p>Experience with UX design process, wireframes, Figma, and Adobe XD.</p>
+            </div>
+
+            <div class="skill-card">
+                <i class="bi bi-globe skill-icon"></i>
+                <h4>WordPress Development</h4>
+                <p>Proficient in WordPress customization, including custom CSS, PHP, JavaScript, and WooCommerce plugin
+                    integration.</p>
+            </div>
+        </div>
+
+
+    </section>
+
+
+    <div id="about"></div>
+    <section class="about-me-section my-container">
+        <br><br>
+        <div class="about-me-header">
+            <p class="simple-text">Who Am I?</p>
+            <h3 class="know-me-heading">Know Me</h3>
+        </div>
+        <div class="about-me-content">
+            <!-- Profile Image Card -->
+            <div></div>
+            <div class="profile-card">
+                <img src="images/profile2.png" alt="stephenraj  profile" class="profile-image" />
+            </div>
+            <!-- About Me Card -->
+            <div class="about-me-card">
+                <h3>STEPHENRAJ W</h3>
+                <p>
+                    I am Stephenraj. W, a passionate Web Designer & Developer with a strong background in creating
+                    impactful digital experiences.
+                    I hold a <strong>degree in Computer Science Engineering</strong> from <strong>St. Joseph's College
+                        of Engineering and Technology, Thanjavur</strong>, graduating with
+                    <strong>distinction</strong> as a gold medalist and class topper. My dedication to academic
+                    excellence reflects my commitment to achieving success in every endeavor.
+
+                </p>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/steven_de_designer/" target="_blank" class="social-icon"><i
+                            class="bi bi-instagram"></i></a>
+                    <a href="https://wa.me/6385712059" target="_blank" class="social-icon"><i
+                            class="bi bi-whatsapp"></i></a>
+                    <a href="https://www.upwork.com/freelancers/~019ab1f77ede9667c4" target="_blank" class="social-icon"><i class="bi bi-briefcase"></i></a>
+                </div>
+            </div>
+
+        </div>
+        <br><br><br>
+    </section>
+
+    <div id="career"></div>
+    <div class="experience-section my-container">
+        <div class="skills-header">
+            <div class="why-me">
+                <p>Experience</p>
+                <h3>My Career Path</h3>
+            </div>
+            <div class="skills-intro">
+                <p>Specializing in web design, development, and graphics, I deliver responsive, creative solutions
+                    tailored to modern needs and client expectations.</p>
+            </div>
+        </div>
+        <div class="timeline">
+            <!-- Experience 1 -->
+            <div class="timeline-item">
+                <span class="timeline-date">2022 - 2023</span>
+                <div class="timeline-content">
+                    <h3>Freelancing Graphic Designer</h3>
+                    <p>
+                        Worked on diverse graphic design projects, creating visually engaging materials for clients,
+                        including logos, banners, and marketing assets.
+                    </p>
+                </div>
+            </div>
+            <!-- Experience 2 -->
+            <div class="timeline-item">
+                <span class="timeline-date">2023 - 2024</span>
+                <div class="timeline-content">
+                    <h3>Web Designer</h3>
+                    <h4>Scion Research and Development</h4>
+                    <p>
+                        Designed and developed user-friendly websites, ensuring responsiveness and high-quality
+                        performance for client projects.
+                    </p>
+                </div>
+            </div>
+            <!-- Experience 3 -->
+            <div class="timeline-item">
+                <span class="timeline-date">2024 - Present</span>
+                <div class="timeline-content">
+                    <h3>Web Designer & Developer</h3>
+                    <h4>Dream Effects IT Solutions</h4>
+                    <p>
+                        Responsible for designing and developing full-stack solutions, enhancing user experiences, and
+                        collaborating with cross-functional teams.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <br>
+    </div>
+
+    <div class="quote-section">
+        <h1>
+            "With <span class="highlight">dedication</span> and a passion for <span class="highlight">continuous
+                learning</span>, I strive to grow every day and embrace new challenges."
+        </h1>
+    </div>
+
+    <br><br>
+
+    <div id="projects"></div>
+    <div class="projects-section my-container">
+        <!-- Left Side: Header -->
+        <div class="skills-header">
+            <div class="why-me">
+                <p>Previous Works</p>
+                <h3>SOME PROJECTS</h3>
+            </div>
+            <div class="projects-filters">
+                <button>Graphic Design</button>
+                <button>UI/UX Design</button>
+                <button>Website</button>
+                <button>Desktop Apps</button>
+                <button>WordPress Applications</button>
+                <button>VBA Projects</button>
+            </div>
+        </div>
+
+
+        <!-- Right Side: Filters -->
+
+
+        <!-- Project Cards -->
+        <div class="projects-grid ">
+            <!-- Example Card 2 -->
+            <a href="https://www.behance.net/gallery/190894843/Super-Soup-Stall" class="project-card"
+                style="background-image: url('images/super\ soup.gif');" target="_blank">
+                <div class="card-content">
+                    <h3>Super Soup Stall</h3>
+                    <p>Vibrant branding for Super Soup Stall.</p>
+                    <i class="bi bi-box-arrow-up-right"></i>
+                </div>
+            </a>
+
+            <!-- Example Card 2 -->
+            <a href="https://www.behance.net/gallery/195385537/Rose-Bertin-Boutique" class="project-card"
+                style="background-image: url('images/roasebertin.gif');" target="_blank">
+                <div class="card-content">
+                    <h3>Rose Bertin Boutique</h3>
+                    <p>Elegant branding for Rose Bertin Boutique.</p>
+                    <i class="bi bi-box-arrow-up-right"></i>
+                </div>
+            </a>
+
+            <!-- Example Card 2 -->
+            <a href="https://www.figma.com/proto/PuIE7CWYPCjpzcx3WBFmE8/vsafe?page-id=0%3A1&node-id=100-107&starting-point-node-id=104%3A212&t=xdVIByz1k8j97eoB-1"
+                class="project-card" style="background-image: url('images/vsafe.gif');" target="_blank">
+                <div class="card-content">
+                    <h3>V Safe</h3>
+                    <p>Designed intuitive UI for vSafe website.</p>
+                    <i class="bi bi-box-arrow-up-right"></i>
+                </div>
+            </a>
+
+            <!-- Example Card 2 -->
+            <a href="https://scionrd.com/" class="project-card" style="background-image: url('images/scion.gif');"
+                target="_blank">
+                <div class="card-content">
+                    <h3>Scion R&D</h3>
+                    <p>Developed a website for Scion R&D.</p>
+                    <i class="bi bi-box-arrow-up-right"></i>
+                </div>
+            </a>
+            <!-- Example Card 2 -->
+            <a href="https://kalamgroupofeducation.in/" class="project-card"
+                style="background-image: url('images/kalam.gif');" target="_blank">
+                <div class="card-content">
+                    <h3>Kalam Education</h3>
+                    <p>Website developed for Kalam Group Education.</p>
+                    <i class="bi bi-box-arrow-up-right"></i>
+                </div>
+            </a>
+            <!-- Example Card 1 -->
+            <a href="javascript:void(0)" class="project-card" style="background-image: url('images/ems.gif');">
+                <div class="card-content">
+                    <h3>EMS Application</h3>
+                    <p>Developed EMS application UI with C# .NET.</p>
+                    <i class="bi bi-box-arrow-up-right"></i>
+                </div>
+            </a>
+
+            <!-- Example Card 2 -->
+            <a href="javascript:void(0)" class="project-card" style="background-image: url('images/vba\ module.gif');">
+                <div class="card-content">
+                    <h3>VBA Application</h3>
+                    <p>Automated processes with a custom VBA application.</p>
+                    <i class="bi bi-box-arrow-up-right"></i>
+                </div>
+            </a>
+
+
+        </div>
+        <br><br>
+    </div>
+
+    <div id="contact"></div>
+    <div class="contact-section my-container">
+        <!-- Left Side: Contact Information -->
+        <div class="about-me-header">
+            <p class="simple-text">Reach Me</p>
+            <h3 class="know-me-heading" style="color: black;">Get In Touch</h3>
+        </div>
+        <div class="contact-info">
+            <ul>
+                <li><i class="bi bi-phone"></i> +91 6385712059</li>
+                <li><i class="bi bi-envelope"></i> <a
+                        href="mailto:stephenrajwilson@gmail.com">stephenrajwilson@gmail.com</a>
+                </li>
+                <li><i class="bi bi-whatsapp"></i> <a href="https://wa.me/6385712059">+91 6385712059</a> </li>
+                <li><i class="bi bi-instagram"></i> <a href="https://www.instagram.com/steven_de_designer/"
+                        target="_blank">@steven_de_designer</a></li>
+                <li><i class="bi bi-briefcase"></i> <a href="https://www.upwork.com/freelancers/~019ab1f77ede9667c4"
+                        target="_blank">Upwork : Steven R. </a></li>
+                <li><i class="bi bi-behance"></i> <a href="https://www.behance.net/steven_de_designer"
+                        target="_blank">Steven Prime</a></li>
+                <li><i class="bi bi-github"></i> <a href="https://github.com/StevenDesigner"
+                        target="_blank">StevenDesigner</a></li>
+                <li><i class="bi bi-linkedin"></i> <a href="https://www.linkedin.com/in/stephenrajw/"
+                        target="_blank">Stephenraj W</a></li>
+            </ul>
+        </div>
+
+        <!-- Right Side: Contact Form -->
+        <div class="contact-form">
+            <h5>Connect WIth Me</h5>
+            <br>
+            <form action="mailsend.php" method="post">
+
+                <input type="text" placeholder="Your Name" name="name" class="form-control" />
+                <input type="tel" placeholder="Your Mobile" name="mobile" class="form-control" />
+                <input type="email" placeholder="Your Email" name="email" class="form-control" />
+                <textarea placeholder="Your Message" class="form-control" name="message"></textarea>
+                <button type="submit" class="btn-submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+
+
+    <style>
+        /* Popup container */
+        .popup {
+            display: none;
+            /* Hidden by default */
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+        }
+
+        .popup-content {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            width: 300px;
+            position: absolute;
+            bottom: 10%;
+            right: 10%;
+        }
+
+        .popup h4 {
+            margin: 0;
+            color: #28a745;
+        }
+
+        .popup button {
+            background-color: #28a745;
+            color: #fff;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .popup button:hover {
+            background-color: #218838;
+        }
+    </style>
+    <div id="successPopup" class="popup">
+        <div class="popup-content">
+            <h4>Thank You for Contacting Me!</h4>
+            <p>Your message has been successfully sent. I will respond as soon as possible</p>
+            <button onclick="closePopup()">Close</button>
+        </div>
+    </div>
+
+    <script>
+        // Check if success=true is in the URL
+        window.onload = function () {
+            const urlParams = new URLSearchParams(window.location.search);
+            if (urlParams.has('success') && urlParams.get('success') === 'true') {
+                document.getElementById('successPopup').style.display = 'block';
+            }
+        };
+
+        // Function to close the popup
+        function closePopup() {
+            // Hide the popup
+            document.getElementById('successPopup').style.display = 'none';
+
+            // Redirect to index.html without any parameters
+            window.location.href = 'index.html';
+        }
+    </script>
+
+<footer class="footer">
+    <div class="footer-content">
+        <p>&copy; <span id="currentYear"></span> Stephenraj. All rights reserved.</p>
+    </div>
+</footer>
+
+<script>
+    document.getElementById('currentYear').textContent = new Date().getFullYear();
+</script>
+</body>
+
+</html>
